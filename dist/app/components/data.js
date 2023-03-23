@@ -10,14 +10,13 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 export function traer_api() {
     return __awaiter(this, void 0, void 0, function* () {
         try {
-            const pokemon = yield fetch('https://valorant-api.com/v1/agents/').then((res) => {
+            const val = yield fetch('https://valorant-api.com/v1/agents/').then((res) => {
                 return res.json();
             });
-            return pokemon;
+            return val;
         }
         catch (error) {
             console.log(error);
         }
     });
 }
-traer_api();
