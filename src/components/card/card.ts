@@ -6,7 +6,7 @@ export enum Attribute {
 
 class Card extends HTMLElement {
     name?: string;
-    roles?: number;
+    roles?: string;
 
     static get observedAttributes() {
         const attrs: Record<Attribute, null> = {
@@ -31,9 +31,6 @@ class Card extends HTMLElement {
         newValue: string | undefined
         ) {
             switch (propName) {
-                case Attribute.roles:
-                this.roles = newValue ? Number(newValue) : undefined;
-                break;
 
                 default:
                 this[propName] = newValue;
