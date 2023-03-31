@@ -4,8 +4,10 @@ export async function traer_api() {
 				return res.json();
 			});
 			return val.data;
+
 	} catch (error) {
 		console.log(error);
 	}
 }
 
+console.log(traer_api())

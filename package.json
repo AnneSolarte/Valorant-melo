@@ -6,14 +6,18 @@
   "scripts": {
     "start": "serve",
     "build": "webpack --watch --mode=production"
+
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "css-loader": "^6.7.3",
     "eslint": "^8.36.0",
     "eslint-plugin-react": "^7.32.2",
+    "mini-css-extract-plugin": "^2.7.5",
     "serve": "^14.2.0",
+    "style-loader": "^3.3.2",
     "ts-loader": "^9.4.2",
     "typescript": "^5.0.2",
     "webpack": "^5.76.3",
